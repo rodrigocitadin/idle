@@ -9,3 +9,4 @@ mod find_the_index_of_the_first_occurrence_in_a_string;
 mod search_insert_position;
 mod length_of_last_word;
 mod plus_one;
+mod add_binary;

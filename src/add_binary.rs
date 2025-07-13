@@ -1,4 +1,4 @@
-use crate::solutions::Solution;
+use crate::Solution;
 
 impl Solution {
     pub fn add_binary(a: String, b: String) -> String {

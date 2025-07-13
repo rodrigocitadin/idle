@@ -12,7 +12,7 @@ impl ListNode {
     }
 }
 
-use crate::solutions::Solution;
+use crate::Solution;
 
 impl Solution {
     pub fn merge_two_lists(

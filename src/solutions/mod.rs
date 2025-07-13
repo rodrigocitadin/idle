@@ -10,3 +10,6 @@ mod search_insert_position;
 mod length_of_last_word;
 mod plus_one;
 mod add_binary;
+mod sqrtx;
+
+struct Solution;

@@ -10,10 +10,10 @@ impl Solution {
         let guess = fx / 2.0;
         let result = (1.0 / 2.0) * (guess + fx / guess);
 
-        Self::reduce(fx, result).floor() as i32
+        Self::reduce_sqrt(fx, result).floor() as i32
     }
 
-    fn reduce(x: f64, y: f64) -> f64 {
+    pub fn reduce_sqrt(x: f64, y: f64) -> f64 {
         let result = (1.0 / 2.0) * (y + x / y);
         let deviation = y - result;
 
@@ -21,6 +21,6 @@ impl Solution {
             return result;
         }
 
-        Self::reduce(x, result)
+        Self::reduce_sqrt(x, result)
     }
 }

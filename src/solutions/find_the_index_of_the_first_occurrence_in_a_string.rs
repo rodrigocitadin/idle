@@ -1,16 +1,20 @@
-pub fn str_str(haystack: String, needle: String) -> i32 {
-    let n = haystack.len();
-    let m = needle.len();
+use crate::solutions::Solution;
 
-    if m > n {
-        return -1;
-    }
+impl Solution {
+    pub fn str_str(haystack: String, needle: String) -> i32 {
+        let n = haystack.len();
+        let m = needle.len();
 
-    for i in 0..=n - m {
-        if &haystack[i..i + m] == needle {
-            return i as i32;
+        if m > n {
+            return -1;
         }
-    }
 
-    -1
+        for i in 0..=n - m {
+            if &haystack[i..i + m] == needle {
+                return i as i32;
+            }
+        }
+
+        -1
+    }
 }

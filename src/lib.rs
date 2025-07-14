@@ -12,5 +12,6 @@ mod plus_one;
 mod add_binary;
 mod valid_parentheses;
 mod sqrtx;
+mod climbing_stairs;
 
 struct Solution;
